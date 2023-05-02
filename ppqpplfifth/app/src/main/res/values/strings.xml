@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ppqpplfifth</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_work2">WorkActivity2</string>
+    <string name="title_activity_work1">WorkActivity1</string>
+    <string name="title_activity_work3">WorkActivity3</string>
+    <string name="title_activity_work4">WorkActivity4</string>
+</resources>

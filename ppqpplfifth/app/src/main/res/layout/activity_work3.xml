@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    android:paddingTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg2"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="101dp"
+                android:layout_height="126dp"
+                android:layout_gravity="center"
+                android:src="@drawable/peo1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:hint="登录"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:hint="密码"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="记住密码"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="自动登录"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:text="登录">
+
+            </Button>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:textColor="#FFF16295"
+                    android:text="忘记密码？"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="20dp"
+                    android:textColor="#FFF16295"
+                    android:text="注册账号"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
