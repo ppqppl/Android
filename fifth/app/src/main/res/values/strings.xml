@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">fifth</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_work1">Activity_work1</string>
+    <string name="title_activity_work7">Activity_work7</string>
+    <string name="title_activity_work2">Activity_work2</string>
+    <string name="title_activity_work3">Activity_work3</string>
+    <string name="title_activity_work4">Activity_work4</string>
+    <string name="title_activity_work6">Activity_work6</string>
+</resources>

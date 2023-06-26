@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    android:paddingTop="?attr/actionBarSize">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/timebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:scaleType="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/time"/>
+            <ImageButton
+                android:id="@+id/temperaturebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:scaleType="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/weather"/>
+            <ImageButton
+                android:id="@+id/gpsbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:scaleType="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/gps_communicate"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话号码: " />
+
+            <EditText
+                android:id="@+id/text_number"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:hint="请输入号码"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短信内容: " />
+
+            <EditText
+                android:id="@+id/text_message"
+                android:layout_width="fill_parent"
+                android:layout_height="125dp"
+                android:hint="请输入短信"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="238dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/albumfirstimg"
+                android:layout_width="match_parent"
+                android:layout_height="213dp"
+                android:layout_marginTop="25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgphonecall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:scaleType="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/phonecall" />
+            <ImageButton
+                android:id="@+id/imgmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/message" />
+            <ImageButton
+                android:id="@+id/imgcontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/contact" />
+            <ImageButton
+                android:id="@+id/imgcamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/camera" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/baidubtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/baidu"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/naibuerxingyueti2"
+                android:text="打开百度"/>
+            <Button
+                android:id="@+id/wechatbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/wechat"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/naibuerxingyueti2"
+                android:text="打开微信"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

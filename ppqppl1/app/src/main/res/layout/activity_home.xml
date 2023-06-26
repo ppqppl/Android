@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    android:paddingTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/mypagebtn"
+                android:layout_width="126dp"
+                android:layout_height="108dp"
+                android:background="#00000000"
+                android:src="@drawable/main" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我的主页"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/naibuerxingyueti2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/UIbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/gps"
+                android:fontFamily="@font/naibuerxingyueti2"
+                android:text="界面设计"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/userbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/user"
+                android:fontFamily="@font/naibuerxingyueti2"
+                android:text="学生管理"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/takeaphotobtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/cam"
+                android:fontFamily="@font/naibuerxingyueti2"
+                android:text="拍一拍    "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/stubtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/pay"
+                android:fontFamily="@font/naibuerxingyueti2"
+                android:text="选课系统"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/callmsgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/music"
+                android:fontFamily="@font/naibuerxingyueti2"
+                android:text="手机通讯"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/toolboxbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/tool"
+                android:fontFamily="@font/naibuerxingyueti2"
+                android:text="工具箱   "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

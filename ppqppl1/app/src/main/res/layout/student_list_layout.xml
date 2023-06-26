@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="81dp"
+            android:src="@drawable/avatar1" />
+
+        <TextView
+            android:id="@+id/idtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ID"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="姓名"/>
+        <TextView
+            android:id="@+id/majortxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="专业"/>
+        <TextView
+            android:id="@+id/classtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="班级"/>
+    </LinearLayout>
+
+</LinearLayout>

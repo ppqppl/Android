@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <style type="text/css">
+        div{
+            float:left;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1 align="center" style="padding-bottom: 30px">学生信息管理系统</h1>
+<table align="center">
+    <tr>
+        <td style="padding-right:100px">学生号</td>
+        <td style="padding-right:100px">姓名</td>
+        <td style="padding-right:100px">性别</td>
+        <td style="padding-right:100px">年龄</td>
+        <td style="padding-right:100px">电话号码</td>
+        <td style="padding-right:100px">专业</td>
+        <td style="padding-right:100px">班级</td>
+        <td>入学日期</td>
+    </tr>
+    <tr th:each="stu:${students}">
+        <td th:text = "${stu.stu_id}">
+        <td th:text = "${stu.name}">
+        <td th:text = "${stu.sex}">
+        <td th:text = "${stu.age}">
+        <td th:text = "${stu.phoneNumber}">
+        <td th:text = "${stu.major}">
+        <td th:text = "${stu.class_num}">
+        <td th:text = "${stu.trainDate}">
+    </tr>
+</table>
+<br>
+<div>
+    <p>根据id查询</p>
+    <form action="/find_by_id" th:object="${stu1}" method="post">
+        <input type="text" th:field="${stu1.stu_id}" placeholder="输入学号" id="find_by_id"><br>
+        <br>
+        <button>查询</button>
+    </form>
+</div>
+<div>
+    <p>查入一条新信息</p>
+    <form action="/add" th:object="${stu1}" method="post">
+        <input type="text" th:field="${stu1.stu_id}" placeholder="输入学号" id="new_stu_id"><br>
+        <input type="text" th:field="${stu1.name}" placeholder="输入姓名" id="new_name"><br>
+        <input type="text" th:field="${stu1.age}" placeholder="输入年龄" id="new_age"><br>
+        <input type="text" th:field="${stu1.sex}" placeholder="输入性别" id="new_sex"><br>
+        <input type="text" th:field="${stu1.phoneNumber}" placeholder="输入手机号" id="new_phoneNumber"><br>
+        <input type="text" th:field="${stu1.major}" placeholder="输入专业" id="majro"><br>
+        <input type="text" th:field="${stu1.class_num}" placeholder="输入班级" id="new_class_num"><br>
+        <input type="text" th:field="${stu1.modifyDateTime}" placeholder="输入信息建立日期" id="new_trainDate"><br>
+        <input type="text" th:field="${stu1.trainDate}" placeholder="输入入学日期" id="new_modifyDateTime"><br>
+        <input type="text" th:field="${stu1.pwd}" placeholder="输入密码" id="new_pwd"><br>
+        <br>
+        <button>添加</button>
+    </form>
+</div>
+<div>
+    <p>根据id删除</p>
+    <form action="/delete_by_id" th:object="${stu1}" method="post">
+        <input type="text" th:field="${stu1.stu_id}" placeholder="输入学号" id="delete_by_id"><br>
+        <br>
+        <button>删除</button>
+    </form>
+</div>
+<div>
+    <p>根据姓名搜索</p>
+    <form action="/find_by_name" th:object="${stu1}" method="post">
+        <input type="text" th:field="${stu1.name}" placeholder="输入姓名" id="find_by_name"><br>
+        <br>
+        <button>搜索</button>
+    </form>
+</div>
+<div>
+    <p>根据姓名删除</p>
+    <form action="/delete_by_name" th:object="${stu1}" method="post">
+        <input type="text" th:field="${stu1.name}" placeholder="输入姓名" id="delete_by_name"><br>
+        <br>
+        <button>删除</button>
+    </form>
+</div>
+<div>
+    <p>多条件查询</p>
+    <form action="/find_by_name_and_sex" th:object="${stu1}" method="post">
+        <input type="text" th:field="${stu1.name}" placeholder="输入姓名" id="find_by_name_and_sex_name"><br>
+        <input type="text" th:field="${stu1.sex}" placeholder="输入性别" id="find_by_name_and_sex_sex"><br>
+        <br>
+        <button>查找</button>
+    </form>
+</div>
+<div>
+    <p>根据姓名模糊匹配</p>
+    <form action="/find_by_name_like" th:object="${stu1}" method="post">
+        <input type="text" th:field="${stu1.name}" placeholder="输入姓名" id="find_by_name_like"><br>
+        <br>
+        <button>查询</button>
+    </form>
+</div>
+</body>
+</html>

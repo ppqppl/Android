@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    android:paddingTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/timetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="时间" />
+
+                <ImageButton
+                    android:id="@+id/weatext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#00000000"
+                    android:src="@drawable/weather_default" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/datetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="日期" />
+
+                <TextView
+                    android:id="@+id/temptext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="温度" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/weektext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期X" />
+
+                <TextView
+                    android:id="@+id/airtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="空气质量" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/connactbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#00000000"
+                    android:fontFamily="@font/naibuerxingyueti2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="联系人"
+                    android:drawableTop="@drawable/contact"/>
+                <Button
+                    android:id="@+id/wechatbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#00000000"
+                    android:fontFamily="@font/naibuerxingyueti2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="微信"
+                    android:drawableTop="@drawable/wechat"/>
+                <Button
+                    android:id="@+id/youkubtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#00000000"
+                    android:fontFamily="@font/naibuerxingyueti2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="优酷"
+                    android:drawableTop="@drawable/video"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/camerabtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#00000000"
+                    android:fontFamily="@font/naibuerxingyueti2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="照相机"
+                    android:drawableTop="@drawable/camera"/>
+                <Button
+                    android:id="@+id/callbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#00000000"
+                    android:fontFamily="@font/naibuerxingyueti2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="拨号"
+                    android:drawableTop="@drawable/phonecall"/>
+                <Button
+                    android:id="@+id/msgbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#00000000"
+                    android:fontFamily="@font/naibuerxingyueti2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="短信"
+                    android:drawableTop="@drawable/message"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

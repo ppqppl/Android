@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 权限注册 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION " />
+    <uses-permission android:name="android.permission.MANAGE_MEDIA " />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <queries>
+        <package android:name="com.youku.phone" />
+        <package android:name="com.tencent.mm" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ppqppl1"
+        tools:targetApi="31">
+        <activity
+            android:name=".OtherActivity"
+            android:exported="false"
+            android:label="@string/title_activity_other">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GetGpsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main2">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MytoolsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_mytools">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SearcfhstuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_searcfhstu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WorkActivity8"
+            android:exported="false"
+            android:label="@string/title_activity_work8">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ShowgradelistActivity"
+            android:exported="false"
+            android:label="@string/title_activity_showgradelist">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ShowcourselistActivity"
+            android:exported="false"
+            android:label="@string/title_activity_showcourselist">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ShowclassmsgActivity"
+            android:exported="false"
+            android:label="@string/title_activity_showclassmsg">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ScoreActivity"
+            android:exported="false"
+            android:label="@string/title_activity_score">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MymainpageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_mymainpage">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CoursechooseActivity"
+            android:exported="false"
+            android:label="@string/title_activity_coursechoose">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ShowStudentMsgActivity"
+            android:exported="false"
+            android:label="@string/title_activity_show_student_msg">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddstudentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_addstudent">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:label="@string/title_activity_admin">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity_work7"
+            android:exported="false"
+            android:label="@string/title_activity_work7">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity_work6"
+            android:exported="false"
+            android:label="@string/title_activity_work6">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity_work4"
+            android:exported="false"
+            android:label="@string/title_activity_work4">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity_work3"
+            android:exported="false"
+            android:label="@string/title_activity_work3">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity_work2"
+            android:exported="false"
+            android:label="@string/title_activity_work2">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WorkActivity4"
+            android:exported="false"
+            android:label="@string/title_activity_work4">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WorkActivity3"
+            android:exported="false"
+            android:label="@string/title_activity_work">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WorkActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_work2">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WorkActivity1"
+            android:exported="false"
+            android:label="@string/title_activity_work1">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity_Work1"
+            android:exported="false"
+            android:label="@string/title_activity_work1">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PageDesignActivity"
+            android:exported="false"
+            android:label="@string/title_activity_page_design">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ToolboxActivity"
+            android:exported="false"
+            android:label="@string/title_activity_toolbox">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@anim/right_out" />
+
+
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false"
+            android:label="@string/title_activity_contact">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GetWeatherActivity"
+            android:exported="false"
+            android:label="@string/title_activity_get_weather">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DateActivity"
+            android:exported="false"
+            android:label="@string/title_activity_date">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CommunicateActivity"
+            android:exported="false"
+            android:label="@string/title_activity_communicate">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GetPhotoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_get_photo">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TakeAPhotoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_take_a_photo">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
